@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
     <div class='container'>
         <form id='form1' name='form1' action='saveThis.php' method="post">
             <div id='sf1' class='frm'>
@@ -118,3 +132,31 @@
             </div>
         </form>
     </div>
+
+
+    <script>
+       // Next button Step 2
+     
+       $(".open2").click(function () {
+                if (v.form()) {
+                    $(".frm").hide("fast");
+                    $("#sf3").show("slow");
+                }
+            });
+
+
+        // Back button of Second Step
+            $('.back2').click(function(){
+                $('.frm').hide('fast');
+                $('#sf1').show('slow')
+            })
+
+       
+         
+        })
+
+    
+    </script>
+</body>
+
+</html>
