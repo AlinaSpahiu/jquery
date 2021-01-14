@@ -135,6 +135,31 @@
 
 
     <script>
+        $(document).ready(function () {
+            var v = $('#form1').validate({
+                rules: {
+                    firstName: {
+                        required: true,
+                        minlength: 3
+                    },
+                    lastName: {
+                        required: true,
+                        minlength: 3
+                    }
+                },
+
+            })
+
+            // Next button of first step
+            $('.frm').hide('fast');
+            $('#sf1').show('slow')
+
+            $(".open1").click(function () {
+                if (v.form()) {
+                    $(".frm").hide("fast");
+                    $("#sf2").show("slow");
+                }
+            });
        // Next button Step 2
      
        $(".open2").click(function () {
