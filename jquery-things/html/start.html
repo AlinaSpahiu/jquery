@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title> Jquery Courses</title>
+        <!-- Importing Jquery file:  -->
+        <script src='../js/jquery.js'></script>
+    </head>
+
+    <body>
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                 justify-content: center; 
+                 align-items: center; 
+                
+            }
+            .myDiv{
+                background-color: green;
+                color: white;
+                width: 500px;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <script>
+            // .ready is function
+            //$("document") - we are targeting the whole document.
+            $("document").ready(function(){
+                $('body').append("<h1> Hello World </h1>");
+                $("body").append("<div class='myDiv'> This is a Div</div>");
+                $("body").append("<div class='myDiv'> This is a Div</div>");
+            })
+
+        </script>
+    </body>
+</html>
