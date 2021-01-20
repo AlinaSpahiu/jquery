@@ -41,16 +41,35 @@
                         <div style='border:1px solid black; border-radius:5px; background-color: rgba(245, 245, 220, 0.726); line-height: 10px;padding-left: 10px; margin:15px;'>
                           <p style='padding-top:10px;'> $("document").ready(function(){</p>
                           <p> $(".selectors").css('border', '2px solid black')</p>
-                          <p> $(".selectors").css('border-radius', '10px)</p>
+                          <p> $(".selectors").css('border-radius', '10px)</p>c
                           <p><span style='color: rgba(245, 245, 220, 0);'>$(".selectors")</span>.css('color', 'green')</p>
                           <p><span style='color: rgba(245, 245, 220, 0);'>$(".selectors")</span>.css('padding', '20px')</p>
                           <p> })</p>
                         </div>
                       </div>
-                        
+
+                      <hr /> 
+
+                      <div class='row'>  <!-- Second Row-->
+                        <div class='col' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
+                          <p>Jquery is Here 1</p>
+                          <p>Jquery is Here 1</p>
+                          <p>Jquery is Here 1</p>
+                        </div>
+                        <div class='col' style='border:1px solid black; border-radius:5px; background-color: rgba(245, 245, 220, 0.726); line-height: 10px;padding-left: 10px; margin:15px;'>
+                          <h6>Jquery is Here 1</h6>
+                          <h6>Jquery is Here 1</h6>
+                          <h6>Jquery is Here 1</h6>
+                        </div>
+                        <div class="row">
+    
+                        </div>
+                      </div> <!-- End of second row-->
                     </div>
+                   
                   </div>
 
+               
               </div>
 
           </div>
@@ -60,7 +79,12 @@
  $("document").ready(function(){
      $(".selectors").css('border', '2px solid black')
      $(".selectors").css('border-radius', '10px').css('color', 'green').css('padding', '20px')
+
+     //get only first p
+     $('h6:first').css('border',"2px solid red").css('width', '55%').css('padding', '10px')
+     $('h6:last').css('border',"2px solid purple").css('width', '55%').css('padding', '10px')
  })
+
    </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
