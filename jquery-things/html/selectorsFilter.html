@@ -22,7 +22,7 @@
 
               <div class='row'>
                   <div class='col col-sm-4 m-0 p-0'>
-                    <div style='background-color:#4b1b3cfd; height: 90vh;'>
+                    <div style='background-color:#4b1b3cfd;min-height: 90vh;'>
                       <nav class="nav flex-column">
                         <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                           <a class="nav-link active" aria-current="page" href="./start.html">Start</a>
@@ -35,7 +35,7 @@
 
 
                   <div class="col col-sm-8 m-0 p-0">
-                    <div style='background-color:rgba(0, 158, 105, 0.938); height:90vh;'>
+                    <div style='background-color:rgba(0, 158, 105, 0.938);     overflow-y: scroll; height:90vh'>
                       <div style='padding-top:10px;'>
                         <p class='selectors'> This is a selector example!</p>
                         <div style='border:1px solid black; border-radius:5px; background-color: rgba(245, 245, 220, 0.726); line-height: 10px;padding-left: 10px; margin:15px;'>
@@ -61,10 +61,26 @@
                           <h6>Jquery is Here 1</h6>
                           <h6>Jquery is Here 1</h6>
                         </div>
-                        <div class="row">
-    
-                        </div>
                       </div> <!-- End of second row-->
+
+                      <hr />
+
+                      <div class="row"> <!--Third Row-->
+                        <div class='col filter' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
+                        <p> First Paragrapf</p>
+                        <p> Second Paragrapf</p>
+                        <p> Third Paragrapf</p>
+                        <p> Fourth Paragrapf</p>
+                        </div>
+
+                        <div class='col' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
+                          <p> First Paragrapf</p>
+                          <p> Second Paragrapf</p>
+                          <p> Third Paragrapf</p>
+                          <p> Fourth Paragrapf</p>
+                          </div>
+
+                      </div> <!-- End of third Row-->
                     </div>
                    
                   </div>
@@ -83,6 +99,12 @@
      //get only first p
      $('h6:first').css('border',"2px solid red").css('width', '55%').css('padding', '10px')
      $('h6:last').css('border',"2px solid purple").css('width', '55%').css('padding', '10px')
+
+     //paragraf seletors/filters
+     $(".filter p:first").css("color", 'green');
+     $(".filter p:last").css("color", 'pink');
+     $(".filter p:even").css("border", '1px solid black').css("padding","10px").css('background-color', 'lightgreen');
+
  })
 
    </script>
