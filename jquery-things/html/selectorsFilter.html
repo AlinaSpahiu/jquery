@@ -52,14 +52,14 @@
 
                       <div class='row'>  <!-- Second Row-->
                         <div class='col' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
-                          <p>Jquery is Here 1</p>
-                          <p>Jquery is Here 1</p>
-                          <p>Jquery is Here 1</p>
+                          <p>Jquery Selector is Here 1</p>
+                          <p>Jquery Selector is Here 1</p>
+                          <p>Jquery Selector is Here 1</p>
                         </div>
                         <div class='col' style='border:1px solid black; border-radius:5px; background-color: rgba(245, 245, 220, 0.726); line-height: 10px;padding-left: 10px; margin:15px;'>
-                          <h6>Jquery is Here 1</h6>
-                          <h6>Jquery is Here 1</h6>
-                          <h6>Jquery is Here 1</h6>
+                          <h6>Jquery Selector is Here 1</h6>
+                          <h6>Jquery Selector is Here 1</h6>
+                          <h6>Jquery Selector is Here 1</h6>
                         </div>
                       </div> <!-- End of second row-->
 
@@ -67,20 +67,41 @@
 
                       <div class="row"> <!--Third Row-->
                         <div class='col filter' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
-                        <p> First Paragrapf</p>
-                        <p> Second Paragrapf</p>
-                        <p> Third Paragrapf</p>
-                        <p> Fourth Paragrapf</p>
+                        <p> First Filter Paragrapf</p>
+                        <p> Second Filter Paragrapf</p>
+                        <p> Third Filter Paragrapf</p>
+                        <p> Fourth Filter Paragrapf</p>
                         </div>
 
                         <div class='col' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
-                          <p> First Paragrapf</p>
-                          <p> Second Paragrapf</p>
-                          <p> Third Paragrapf</p>
-                          <p> Fourth Paragrapf</p>
+                          <p class='fourth'> First Filter Paragrapf</p>
+                          <p> Second Filter Paragrapf</p>
+                          <p> Third Filter Paragrapf</p>
+                          <p class='fourth'> Fourth Filter Paragrapf</p>
                           </div>
 
                       </div> <!-- End of third Row-->
+
+                      <div class="row"> <!--Fourth Row-->
+                        <div class='col filter' id='box' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
+                          <ul  > 
+                            <li> One </li>
+                            <li> Two </li>
+                            <li> Three </li>
+                            <li> Four </li>
+                          </ul>
+                        </div>
+
+                        <div class='col' style='border:1px solid black; border-radius:5px; background-color: beige; line-height: 10px;padding-left: 10px; margin:15px;'>
+                          <ul> 
+                            <li> One </li>
+                            <li> Two </li>
+                            <li> Three </li>
+                            <li> Four </li>
+                          </ul>
+                          </div>
+
+                      </div> <!-- End of Fourth Row-->
                     </div>
                    
                   </div>
@@ -105,6 +126,16 @@
      $(".filter p:last").css("color", 'pink');
      $(".filter p:even").css("border", '1px solid black').css("padding","10px").css('background-color', 'lightgreen');
 
+      // advanced selectors
+      // per cdo paragraf qe eshte brenda nje div.
+      //$("div > p").css('color', 'purple')
+
+      // per cdo paragraf me klase 'fourth' brenda cdo divi
+      $("div > p.fourth").css('border', '1px solid purple')
+                         .css('padding', '5px')
+
+      //
+      $("#box+ul").css('color', 'red')
  })
 
    </script>
