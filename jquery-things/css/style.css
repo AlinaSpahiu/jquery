@@ -17,8 +17,52 @@ body{
 a{
     font-weight: bolder;
     padding-top:20px;
+    color: rgb(2, 190, 96);
+}
+a:hover{
+    font-weight: bolder;
+    padding-top:20px;
+    color: rgb(87, 238, 0);
 }
 .selectors{
     background-color: beige;
     color: red;
+}
+
+.scroll{
+  overflow: scroll;
+  height: 100vh;
+}
+
+/* Animations */
+#animations{
+    width: 100%;
+    margin: 1px;
+}
+#textbox{
+    background-color: rgba(223, 208, 189, 0.473);
+    padding: 10px;
+}
+/* End of Animations */
+
+#creatingContent{
+    width: 100%;
+margin: 1px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .yellow{
+      color:rgb(248, 248, 0);
+      font-weight: bold;
+       
+  }
+  .orange{
+    color:orange;
+    font-weight: bold;
+}
+.code{
+    background-color: #a2a2;
 }
