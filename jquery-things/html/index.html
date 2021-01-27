@@ -1,167 +1,297 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" type='text/css' href="../css/style.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src='../js/jquery.js'></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type='text/css' href="../css/style.css" />
 
-    <!-- title of Page-->
-    <title>Hello, world!</title>
-  </head>
+  <script src='../js/jquery.js'></script>
 
-  <body>
-      <div>
-        <!-- <div class='row>'>
+  <!-- title of Page-->
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div>
+    <!-- <div class='row>'>
           <h1>Hello, world!</h1>
         </div> -->
 
-          <div class='container-fluid'>
-              <div class='row'> <!-- Main Row-->
-                  <div class='col col-sm-3 m-0 p-0'> <!-- First Col-->
-                    <div style='background-color:#0b0f0bee; height: 100vh;'>
-                        <nav class="nav flex-column">
-                          <a class="nav-link " aria-current="page" href="#animations">Animations</a>
-                          <a class="nav-link " aria-current="page" href="#creatingContent">CreateContent</a>
-                          </nav>
-                    </div>
-                  </div> <!-- end of first Col-->
+    <div class='container-fluid'>
+      <div class='row'>
+        <!-- Main Row-->
+        <div class='col col-sm-3 m-0 p-0'>
+          <!-- First Col-->
+          <div style='background-color:#0b0f0bee; height: 100vh;'>
+            <nav class="nav flex-column">
+              <a class="nav-link " aria-current="page" href="#animations">Animations</a>
+              <a class="nav-link " aria-current="page" href="#creatingContent">CreateContent</a>
+              <a class="nav-link " aria-current="page" href="#events">Events</a>
+            </nav>
+          </div>
+        </div> <!-- end of first Col-->
 
-                            <!-- Second Col-->
-                  <div class="col col-sm-8 m-0 p-0 scroll" > 
-                    <div class='row' id='animations'> <!--Animations-->
-                      <div class='row'>
-                        <h2> Animations</h2>
-                      </div>
+        <!-- Second Col-->
+        <div class="col col-sm-8 m-0 p-0 scroll">
+          <div class='row' id='animations'>
+            <!--Animations-->
+            <div class='row'>
+              <h2> Animations</h2>
+            </div>
 
-                      <div class="row mb-2 justify-content-center">
-                      <div>
-                          <button type="button" id="grow" class="btn btn-dark">Grow!</button>
-                          <button type="button" id="move" class="btn btn-warning">Move!</button>
-                          <button type="button" id="bigger" class="btn btn-secondary">Bigger!</button>
-                          <button type="button" id="manyThings" class="btn btn-danger">Many Things!</button>
-                      </div>
-                    </div>
-                      <div class="row">
-                        <div class='col'>
-                      <div id='textbox'>
-                         <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis facere minima omnis assumenda fuga adipisci ratione ullam porro dicta voluptates, ipsam quaerat ducimus expedita? Laboriosam aliquid vitae doloremque aperiam temporibus?</p>
-                      </div>
-                    </div> <div class='col'>
-                      <div  class='code'>
-                          <p>$("document").ready(function(){ </p>
-                          <p> <span class='orange'>$("#grow")</span>.<span class='yellow'>click</span>(function(){
-                             $("#textbox").<span class='yellow'>animate</span>({ height:"300px"}, 1000)
-                             })
-                          </p>
-                   
-                          <p> <span class='orange'>$("#move")</span>.<span class='yellow'>click</span>(function(){
-                             $("#textbox").<span class='yellow'>animate</span>({ marginLeft:"100px"}, 1000)
-                             })
-                          </p>
-                        
-                          <p> <span class='orange'>$("#bigger")</span>.<span class='yellow'>click</span>(function(){
-                             $("#textbox").<span class='yellow'>animate</span>({ fontSize:"30px"}, 1000)
-                            })
-                          </p> 
-                         
-                          <p><span class='orange'> $("#manyThings")</span>.<span class='yellow'>click</span>(function(){
-                             $("#textbox").<span class='yellow'>nimate</span>({ marginLeft:"150px", width:"300px", height:"400px", fontSize:"25px"}, 1000)
-                            })
-                           });
-                          </p>
-                     </div>
-                    </div>
-                    </div>
-                    </div> <!-- End of Animations-->
+            <div class="row mb-2 justify-content-center">
+              <div>
+                <button type="button" id="grow" class="btn btn-dark">Grow!</button>
+                <button type="button" id="move" class="btn btn-warning">Move!</button>
+                <button type="button" id="bigger" class="btn btn-secondary">Bigger!</button>
+                <button type="button" id="manyThings" class="btn btn-danger">Many Things!</button>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class='col'>
+                <div id='textbox'>
+                  <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis facere minima omnis assumenda
+                    fuga adipisci ratione ullam porro dicta voluptates, ipsam quaerat ducimus expedita? Laboriosam
+                    aliquid vitae doloremque aperiam temporibus?</p>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='code'>
+                  <p>$("document").ready(function(){ </p>
+                  <p> <span class='orange'>$("#grow")</span>.<span class='yellow'>click</span>(function(){
+                    $("#textbox").<span class='yellow'>animate</span>({ height:"300px"}, 1000)
+                    })
+                  </p>
 
-                    <hr />
+                  <p> <span class='orange'>$("#move")</span>.<span class='yellow'>click</span>(function(){
+                    $("#textbox").<span class='yellow'>animate</span>({ marginLeft:"100px"}, 1000)
+                    })
+                  </p>
 
+                  <p> <span class='orange'>$("#bigger")</span>.<span class='yellow'>click</span>(function(){
+                    $("#textbox").<span class='yellow'>animate</span>({ fontSize:"30px"}, 1000)
+                    })
+                  </p>
 
-                    <div class='row' id='creatingContent'><!-- Creating Content-->
-                        <div class='row'>
-                           <h2> Create Content</h2>
-                        </div>
-                        <div>
-                            <button class='btn btn-danger' id="create_text"> Create</button >
-                            <button class='btn btn-danger'  id="create_text"> Create Text</button >
-                            <button class='btn btn-danger'  id="create_variable"> Create Text</button >
-                        </div>
-                        <div id="creatingContentParagraphs"> 
-                             <p> Lorem ipsum dolor sit amet consect</p>
-                             <p> Lorem ipsum dolor sit amet consect</p>
-                             <p> Lorem ipsum dolor sit amet consect</p>
-                             <p> Lorem ipsum dolor sit amet consect</p>
-                        </div>
-  
-                        <!-- <div style='border:1px solid black; border-radius:5px; background-color: rgba(245, 245, 220, 0.726); line-height: 10px;padding: 10px; margin:15px;'>
-                              <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                              <p> ipsum dolor sit amet consectetur adipisicing elit.</p>
-                         </div> -->
-                    </div> <!-- End Of Creating Content-->
+                  <p><span class='orange'> $("#manyThings")</span>.<span class='yellow'>click</span>(function(){
+                    $("#textbox").<span class='yellow'>nimate</span>({ marginLeft:"150px", width:"300px",
+                    height:"400px", fontSize:"25px"}, 1000)
+                    })
+                    });
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End of Animations-->
 
 
+          <hr />
 
-                  
-                    </div><!-- End of Second Col-->
-              </div> <!--end of main Row-->
-          </div> <!-- End of Container-->
+        <!-- Creating Content-->
+          <div class='row' id='creatingContent'>
+        
+            <div class='row'>
+              <h2> Create Content</h2>
+            </div>
+
+            <div class='row mb-2'>
+              <div>
+                <button class='btn btn-warning' id="create_text"> Create</button>
+                <button class='btn btn-danger' id="create_text"> Create Text</button>
+                <button class='btn btn-secondary' id="create_variable"> Create Text</button>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col'>
+                <div class='code'>
+                  <div id="creatingContentParagraphs">
+                    <p> Jquery is Awsome</p>
+                    <p> Java is Awsome</p>
+                    <p> React.js is Awsome</p>
+                    <p> Javascript is Awsome</p>
+                    <p> Node.js is Awsome</p>
+                    <p> MongoDb is Awsome</p>
+                    <p> Javascript is Awsome</p>
+                    <p> Bootstrap is Awsome</p>
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="code">
+                     <p> <span class='blue'>$</span>('<span class='orange'>document</span>').<span class='yellow'>ready</span>(<span class='blue'>function () </span>{</p>
+                     <p><span class='blue'>$</span>("<span class='orange'>#creatingContent p:first-child</span>").<span class='yellow'>css</span>("border", "1px solid red") </p> 
+                     <p><span class='blue'>$</span>("<span class='orange'>#creatingContentp:last-of-type</span> ").<span class='yellow'>css</span>("border", "1px solid yellow")</p> 
+                      <p><span class='blue'>$</span>("<span class='orange'>#creatingContent p:contains('Javascript')</span>").<span class='yellow'>css</span>("border", "1px solid green")</p>
+                     <p><span class='blue'>$</span>("<span class='orange'>#creatingContent p:nth-child(3)</span>").<span class='yellow'>css</span>("border", "1px solid gray")</p> 
+                    })
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class='row'>
+              <p>☞ <span class='blue'>$</span>("<span class='orange'>#creatingContent p:first-child</span>").<span class='yellow'>css</span>("<span class='orange'>border", "1px solid red</span>)") </p> 
+              <p style="padding-left:30px; color: rgb(142, 248, 156);">◈ You are selecting the first paragraph, of a div with ID = creatingContent and giving it a Red Border.</p> 
+
+              <p>☛ <span class='blue'>$</span>("<span class='orange'>#creatingContentp:last-of-type</span> ").<span class='yellow'>css</span>("<span class='orange'>border", "1px solid yellow</span>)")</p> 
+              <p style="padding-left:30px; color: rgb(142, 248, 156)">◈ You are selecting the last paragraf of a div with ID = createParagrapf and giving it a Yellow Border.</p> 
+
+              <p>☛ <span class='blue'>$</span>("<span class='orange'>#creatingContent p:contains('Javascript')</span>").<span class='yellow'>css</span>("<span class='orange'>border", "1px solid green</span>)") </p>
+              <p style="padding-left:30px; color: rgb(142, 248, 156)">◈ You are selecting all Paragraphs that contain 'Javascript' Inside of them and giving them a Green Border.</p>
+
+              <p>☛ <span class='blue'>$</span>("<span class='orange'>#creatingContent p:nth-child(3)</span>").<span class='yellow'>css</span>("<span class='orange'>border", "1px solid gray"</span>) </p>
+              <p style="padding-left:30px; color: rgb(142, 248, 156)">◈ You are selecting the nth paragrafph, which in this case is the third one and giving to it a gray Border.</p> 
+            </div>
+
+            <div class='row justify-content-center'>
+              <div class=''>
+              <button type="button" id="create" class="btn btn-success">Create!</button>
+              <button type="button" id="createText" class="btn btn-warning">Create Text!</button>
+              <button type="button" id="createVariable" class="btn btn-secondary">Create Variable!</button>
+            </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="changeText">
+                    <p> Jquery is Awsome</p>
+                    <p> Java is Awsome</p>
+                    <p> React.js is Awsome</p>
+                    <p> Javascript is Awsome</p>
+                    <p> Node.js is Awsome</p>
+                    <p> MongoDb is Awsome</p>
+                    <p> Javascript is Awsome</p>
+                    <p> Bootstrap is Awsome</p>
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="code">
+                     
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> <!-- End Of Creating Content-->
+
+
+          <hr />
+
+
+          <!-- Events-->
+          <div class='row' id='events'>
+        
+            <div class='row'>
+              <h2> Events</h2>
+            </div>
+
+            <div class='row mb-2'>
+              <div>
+                <button class='btn btn-warning' id="create_text"> Create</button>
+                <button class='btn btn-danger' id="create_text"> Create Text</button>
+                <button class='btn btn-secondary' id="create_variable"> Create Text</button>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col'>
+                <div class='code'>
+                  <div id="creatingContentParagraphs">
+
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="code">
+
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class='row'>
+
+            </div>
+
+            <div class='row justify-content-center'>
+              <div class=''>
+
+            </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="changeText">
+
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='code'>
+                  <div id="code">
+                     
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> <!-- End Of Events-->
+
+        </div><!-- End of Second Col-->
       </div>
-<style>
-        /* #textbox{
-            width:100%;
-            height: 170px;
-            background-color: rgba(223, 208, 189, 0.473);
+      <!--end of main Row-->
+    </div> <!-- End of Container-->
+  </div>
+
+</body>;
+<script>
+  //Animations
+  $("document").ready(function () {
+    $("#grow").click(function () {
+      $("#textbox").animate({ height: "300px" }, 1000)
+    })
+
+    $("#move").click(function () {
+      $("#textbox").animate({ marginLeft: "100px" }, 1000)
+    })
+
+    $("#bigger").click(function () {
+      $("#textbox").animate({ fontSize: "30px", overflow: 'scroll' }, 1000)
+
+    })
+
+    $("#manyThings").click(function () {
+      $("#textbox").animate({ marginLeft: "150px", width: "300px", height: "400px", fontSize: "25px" }, 1000)
+    })
+  });
+  // end of Animatons
+
+  //Creating Content
+
+  $('document').ready(function () {
+    $("#creatingContentParagraphs p:first-child").css("border", "1px solid red")
+    $("#creatingContentParagraphs p:last-of-type").css("border", "1px solid yellow")
+    $("#creatingContentParagraphs p:contains('Javascript')").css("border", "1px solid green")
+    $("#creatingContentParagraphs p:nth-child(3)").css("border", "1px solid gray")
+
+    $('#createText').click(function(){
+      $("#changeText p:first").text('Javascript is the Best!!')
+    })
+    $('#createVariable').click(function(){
+      var newText = $("#changeText p:first");
+
+      $('#changeText p:last').html(newText)
+    })
     
-            margin: 20px;
-             /* display: none;  */
-        }
-        .scroll{
-          overflow: scroll;
-          height: 90vh;
-        } */
-    </style> 
-  </body>;
-  <script>
-//Animations
-    $("document").ready(function(){
-       $("#grow").click(function(){
-          $("#textbox").animate({ height:"300px"}, 1000)
-       })
-
-       $("#move").click(function(){
-          $("#textbox").animate({ marginLeft:"100px"}, 1000)
-       })
-
-       $("#bigger").click(function(){
-          $("#textbox").animate({ fontSize:"30px"}, 1000)
-       })
-
-       $("#manyThings").click(function(){
-          $("#textbox").animate({ marginLeft:"150px", width:"300px", height:"400px", fontSize:"25px"}, 1000)
-       })
-      });
-// end of Animatons
-  
-//Creating Content
-
-      $('document').ready(function(){
-        $("#creatingContent p:first-child").css("border", "1px solid red")
-      })
- 
-  </script>
-   <!-- Optional JavaScript; choose one of the two! -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  }) 
+</script>
+<!-- Optional JavaScript; choose one of the two! -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </html>
