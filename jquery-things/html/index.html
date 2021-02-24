@@ -187,59 +187,18 @@
 
           <!-- Events-->
           <div class='row' id='events'>
+            <div> <h2> Events </h2></div>
+            <div class='row'>
+                <div class='col'>
+                    <div id='eventsCode'> </div>
+                </div>
+
+                <div class='col'>
+                  Code
+                </div>
+            </div>
         
-            <div class='row'>
-              <h2> Events</h2>
-            </div>
-
-            <div class='row mb-2'>
-              <div>
-                <button class='btn btn-warning' id="create_text"> Create</button>
-                <button class='btn btn-danger' id="create_text"> Create Text</button>
-                <button class='btn btn-secondary' id="create_variable"> Create Text</button>
-              </div>
-            </div>
-
-            <div class='row'>
-              <div class='col'>
-                <div class='code'>
-                  <div id="creatingContentParagraphs">
-
-                  </div>
-                </div>
-              </div>
-              <div class='col'>
-                <div class='code'>
-                  <div id="code">
-
-                  </div>
-                </div>
-              </div>
-            </div> 
-
-            <div class='row'>
-
-            </div>
-
-            <div class='row justify-content-center'>
-              <div class=''>
-
-            </div>
-              <div class='col'>
-                <div class='code'>
-                  <div id="changeText">
-
-                  </div>
-                </div>
-              </div>
-              <div class='col'>
-                <div class='code'>
-                  <div id="code">
-                     
-                  </div>
-                </div>
-              </div>
-            </div> 
+           
           </div> <!-- End Of Events-->
 
         </div><!-- End of Second Col-->
@@ -287,6 +246,30 @@
 
       $('#changeText p:last').html(newText)
     })
+    // end of Creating Content
+
+
+    // Events
+    $("document").ready(function(){
+     $('#textbox').on('click', whenMouseIsClicked);
+     $('#textbox').on('mouseenter', whenMouseEters);
+     $('#textbox').on('mouseleave', whenMouseLeves);
+    
+
+     function whenMouseIsClicked(){
+         $("#textbox").html("<h1> You clicked Me! </h1>");
+     }
+
+     function whenMouseLeves(){
+         $("#textbox").html("<h1> You just left!! </h1>");
+     }
+
+     function whenMouseEters(){
+         $("#textbox").html("<h1> You're here again!!  </h1>");s
+     }
+ })
+
+ //End of event
     
   }) 
 </script>
